@@ -703,7 +703,7 @@ color: #000000
     margin-left: 60px;
 }
 #glass{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40px;
     height: 20px;
 
@@ -713,17 +713,15 @@ color: #000000
 /* Media query */
 
 @media only screen and (max-width: 600px) {
-    #second-container{
-        display: block;
-        
+    #container{
+        width: 400px;
+        height: 1900px;
     }
-    #second-container-right{
-        border: solid;
-    }
+   
     #sub-container{
-       border: 1px solid red;
+       /* border: 1px solid red; */
        margin-top: 320px;
-       margin-left: -600px;
+       /* margin-left: -500px; */
     }
     #sub-container-right{
         margin-top: 30px;
@@ -733,30 +731,352 @@ color: #000000
         justify-content: space-around;
     } */
     #navbar{
+       /* width: 720px; */
+       display: block;
+       /* border: 1px solid red; */
+    }
+    .nav-left-div{
         margin-left: -20px;
     }
     .nav-middle-div{
-        margin-left: -235px;
-        gap:5px
+        margin-left:-160px;
+        /* gap:1px */
     }
-    #home{
-        margin-left: 280px;
+    .nav-middle-div>div:nth-child(1){
+        /* border: solid; */
+        /* margin-left:-15px; */
+        margin-top: 40px;
     }
-    .mid-div-subchild{
+    .nav-middle-div>div:nth-child(2){
+        /* border: solid pink; */
+        margin-left: -40px;
+        margin-top: 40px;
+    }
+    .nav-middle-div>div:nth-child(3){
+        /* border: solid; */
+        margin-left: -40px;
+        margin-top: 40px;
+    }
+    .nav-middle-div>div:nth-child(5){
+        /* border: solid; */
+        margin-left: -180px;
+        margin-top: 40px;
+    }
+
+    .nav-middle-div>div:nth-child(4){
+        /* border: solid; */
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+   
+    .nav-right-div{
+        margin-left: -18px;
+        margin-top: 30px;
+        
+    }
+    .nav-right-div>div:nth-child(2){
+      margin-left: 110px;
+    }
+
+    #second-container{
+         width: 600px;
+    }
+    #second-container-left>div{
+        margin-left: -60px;
+        /* border: 1px solid red; */
+        margin-top: 40px;
+        font-size: 20px;
+        
+    }
+    #second-container-left>div:nth-child(2){
+        margin-left: -60px;
+        width: 380px;
+   
+    }
+    #second-container-left>div:nth-child(3){
+        margin-left: -60px;
+        width: 350px;
+        margin-top: 100px;
+        
+        
+    }
+    #second-container-left>div:nth-child(4){
+        margin-left: -50px;
+        width: 350px;
+        margin-top: 160px;
+        border:1px solid #B35E21;
+        
+    }
+    #second-container-left>div:nth-child(4)>button{
+        margin-left: -90px;
+        width: 100px;
+    } 
+    #fifthdiv div:nth-child(1){
+      margin-top: 100px;
+      margin-left: 60px;
+      /* border: 1px solid red; */
+      
+    }
+    #fifthdiv div:nth-child(2){
+        margin-top: 100px;
+        margin-left: 50px;
+        /* visibility: hidden; */
        
     }
+    #newmember{
+        margin-top: 140px;
+        margin-left: -30px;
+        border: 1px solid;
+        visibility: hidden; 
+    }
+    #newmember2{
+        margin-left: -220px;
+        visibility: hidden; 
+    }
+    #onem{
+        margin-top: 40px;
+        margin-left:-420px;
+        visibility: hidden; 
+    }
+    #onem2{
+        margin-left: -400px;
+        visibility: hidden; 
+    }
+    
+
+    #second-container-right{
+        /* border:1px solid; */
+        margin-left: -660px;
+        margin-top: 60px;
+    }
+    #bigimage{
+        margin-left: -700px;
+        margin-top: 880px;
+        width: 300px;
+        
+    }
+    #sub-container-left-firstdiv{
+        margin-top: 80px;
+        width: 360px;
+        /* border: 1px solid red; */
+    }
+    #sub-container-left-firstdiv>div{
+         margin-top: 350px;
+         
+         
+    }
+    #sub-container-left-seconddiv{
+        /* border: 1px solid red; */
+        width: 354px;
+        margin-top: 60px;
+    }
+    #sub-container-left-thirddiv{
+        /* border: 1px solid red; */
+        width: 350px;
+        margin-left: 20px;
+        margin-top: 220px;
+    }
+    #sub-container-left-seconddiv>div:nth-child(3){
+        margin-left: -10px;
+    }
+    #sub-container-left-thirddiv>div:nth-child(3){
+        margin-left: -10px;
+    }
+    #sub-container-right{
+        position: absolute;
+        margin-left: 520px;
+        top: 1520px;
+        width: 350px;
+    }
+    #second-container-right>img{
+       width: 360px;
+    }
+    #glass{
+        visibility: hidden;
+    }
+   #likeicon{
+     visibility: hidden;
+   }
+   #diamond{
+    visibility: hidden;
+   }
+   #hearticon{
+    visibility: hidden;
+   }
+   #hollowheart{
+    visibility: hidden;
+   }
+}
+
+@media only screen and (max-width: 1000px){
+     #container{
+        width: 720px;
+        height: 1900px;
+    }
+   
+    #sub-container{
+       margin-top: 320px;
+    }
+    #sub-container-right{
+        margin-top: 30px;
+        left: -500px;
+    }
+  
+    #navbar{
+       display: block;
+    }
+    .nav-left-div{
+        margin-left: 10px;
+    }
+    .nav-middle-div{
+        margin-left:-130px;
+    }
+    .nav-middle-div>div:nth-child(1){
+        margin-top: 40px;
+    }
+    .nav-middle-div>div:nth-child(2){
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .nav-middle-div>div:nth-child(3){
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .nav-middle-div>div:nth-child(5){
+        margin-left:10px;
+        margin-top: 40px;
+    }
+
+    .nav-middle-div>div:nth-child(4){
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+   
     .nav-right-div{
-        margin-right: 330px;
+        margin-left: 12px;
+        margin-top: 30px;
+        
     }
-    #container{
-        background-color: #fef4ee;
-        width: 480px;
-        height: auto;
-        left: 0px;
-        top: -3px;
-        /* background: url(.png); */
-        mix-blend-mode: luminosity;
-        border: 1px solid black;
-        margin: auto;
+    .nav-right-div>div:nth-child(2){
+      margin-left: 55px;
     }
+
+    #second-container{
+         width: 600px;
+    }
+    #second-container-left>div{
+        margin-left: 12px;
+        margin-top: 50px;
+        font-size: 20px;
+        
+    }
+    #second-container-left>div:nth-child(2){
+        /* margin-left: 10px; */
+        width: 700px;
+        margin-top: 80px;
+    }
+    #second-container-left>div:nth-child(3){
+        /* margin-left: 10px; */
+        width: 700px;
+        margin-top: 50px;
+    }
+    #second-container-left>div:nth-child(4){
+        margin-left: 120px;
+        width: 350px;
+        margin-top: 160px;
+        border:1px solid #B35E21;
+        
+    }
+    #second-container-left>div:nth-child(4)>button{
+        margin-left: -90px;
+        width: 100px;
+    } 
+    #fifthdiv div:nth-child(1){
+      margin-top: 100px;
+      margin-left: 60px;
+      
+    }
+    #fifthdiv div:nth-child(2){
+        margin-top: 100px;
+        margin-left: 50px;
+       
+    }
+    #newmember{
+        margin-top: 140px;
+        margin-left: -30px;
+        border: 1px solid;
+        visibility: hidden; 
+    }
+    #newmember2{
+        margin-left: -220px;
+        visibility: hidden; 
+    }
+    #onem{
+        margin-top: 40px;
+        margin-left:-420px;
+        visibility: hidden; 
+    }
+    #onem2{
+        margin-left: -400px;
+        visibility: hidden; 
+    }
+    
+
+    #second-container-right{
+        margin-left: -660px;
+        margin-top: 60px;
+    }
+    #bigimage{
+        margin-left: -600px;
+        margin-top: 880px;
+        width: 300px;
+        
+    }
+    #sub-container-left-firstdiv{
+        margin-top: 80px;
+        width: 360px;
+        margin-left: 10px;
+    }
+    #sub-container-left-firstdiv>div{
+         margin-top: 350px;
+    }
+    #sub-container-left-seconddiv{
+        width: 354px;
+        margin-top: 60px;
+        /* border: 1px solid red; */
+        margin-left: 10px;
+    }
+    #sub-container-left-thirddiv{
+        width: 350px;
+        margin-left: 20px;
+        margin-top: 220px;
+    }
+     #sub-container-left-seconddiv>div:nth-child(3){
+        margin-left: -10px;
+    }
+    #sub-container-left-thirddiv>div:nth-child(3){
+        margin-left: -10px;
+    }
+    #sub-container-right{
+        position: absolute;
+        margin-left: 800px;
+        top: 1520px;
+        width: 350px;
+    }
+   
+    #glass{
+        visibility: hidden;
+    }
+   #likeicon{
+     visibility: hidden;
+   }
+   #diamond{
+    visibility: hidden;
+   }
+   #hearticon{
+    visibility: hidden;
+   }
+   #hollowheart{
+    visibility: hidden;
+   } 
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Homepage.css"
 import rabbit from "../src/utils/rabbiticon.png"
-import { Button} from '@chakra-ui/react'
+// import { Button} from '@chakra-ui/react'
 import emailicon from "../src/utils/email.svg"
 import man from "../src/utils/man.png";
 import gendericon from "../src/utils/gendericon.png"
@@ -14,9 +14,9 @@ import oval from "../src/utils/Oval.png"
 import oval2 from "../src/utils/oval2.png"
 import star from "../src/utils/star.png";
 import chaand from "../src/utils/chaand.png"
-import dot from "../src/utils/dot.png"
+// import dot from "../src/utils/dot.png"
 import silver from "../src/utils/silver.png"
-import silverdot from "../src/utils/silverdot.png"
+// import silverdot from "../src/utils/silverdot.png"
 import glass from "../src/utils/glassicon.png";
 import diamond from "../src/utils/diamondicon.png";
 import likeicon from "../src/utils/likeicon.png";
@@ -35,7 +35,7 @@ export const Homepage = () => {
             </div>
 
             <div className='nav-middle-div'>
-                <div id='home'>Home</div>
+                <div id='home' className='mid-div-subchild'>Home</div>
                 <div className='mid-div-subchild'>Members</div>
                 <div className='mid-div-subchild'>Blog</div>
                 <div className='mid-div-subchild' >Privacy</div>
@@ -50,37 +50,37 @@ export const Homepage = () => {
         <div id='second-container'>
             <div id='second-container-left'>
                <div>Because you deserve better</div>
-               <div>Get noticed for <span className='orange'>who &nbsp;&nbsp;
+               <div>Get noticed for<span className='orange'>&nbsp;who
                </span> you are,<span className='orange'>not what</span> you look like.</div>
                <div>You’re more than just a photo. You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Because you deserve what dating deserves: better.</div>
-               <div>
+               <div >
                     <img src={emailicon} alt="" />
                      <div>enter your email</div> 
                     <button>Get Started</button>
                </div>
                <div id='fifthdiv'>
-                <div>
-                    <div>15k+</div>
-                    <div>Dates and matches made everyday</div>
-                </div>
-                <div>
-                    <div>1,456</div>
-                    <div>New members signup every day</div>
-                </div>
-                <div>
-                    <div>1M+</div>
-                    <div>Members from around the world</div>
-                </div>
+                    <div>
+                        <div>15k+</div>
+                        <div>Dates and matches made everyday</div>
+                    </div>
+                    <div >
+                        <div id='newmember'>1,456</div>
+                        <div id='newmember2'>New members signup every day</div>
+                    </div>
+                    <div>
+                        <div id='onem'>1M+</div>
+                        <div id='onem2'>Members from around the world</div>
+                    </div>
                </div>
 
             </div>
             <div id='second-container-right'>
-                <img style={{width:"30px",height:"30px",marginTop:"250px"}} src={glass} alt="" />
-                <img style={{width:"60px",height:"60px",marginTop:"50px",marginLeft:"110px"}} src={diamond} alt="" />
-                <img style={{width:"30px",height:"30px",marginTop:"50px",marginLeft:"390px"}} src={likeicon} alt="" />
-                <img style={{width:"60px",height:"60px",marginTop:"220px",marginLeft:"530px"}} src={hearticon} alt="" />
-                <img style={{width:"60px",height:"60px",marginTop:"480px",marginLeft:"556px"}} src={hollowheart} alt="" />
-                <img src={man} alt="" />
+                <img id='glass' style={{width:"30px",height:"30px",marginTop:"250px"}} src={glass} alt="" />
+                <img id='diamond' style={{width:"60px",height:"60px",marginTop:"50px",marginLeft:"110px"}} src={diamond} alt="" />
+                <img id='likeicon' style={{width:"30px",height:"30px",marginTop:"50px",marginLeft:"390px"}} src={likeicon} alt="" />
+                <img id='hearticon' style={{width:"60px",height:"60px",marginTop:"220px",marginLeft:"530px"}} src={hearticon} alt="" />
+                <img id='hollowheart' style={{width:"60px",height:"60px",marginTop:"480px",marginLeft:"556px"}} src={hollowheart} alt="" />
+                <img id='bigimage' src={man} alt="" />
                 <div id='sub-container'>
                     <div id='sub-container-left'>
                         <div id='sub-container-left-firstdiv'>
@@ -157,3 +157,5 @@ export const Homepage = () => {
     </>
   )
 }
+
+
