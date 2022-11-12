@@ -35,11 +35,11 @@ export const Homepage = () => {
             </div>
 
             <div className='nav-middle-div'>
-                <div>Home</div>
+                <div id='home'>Home</div>
                 <div className='mid-div-subchild'>Members</div>
                 <div className='mid-div-subchild'>Blog</div>
-                <div className='mid-div-subchild'>Privacy</div>
-                <div className='mid-div-subchild'>Contact</div>
+                <div className='mid-div-subchild' >Privacy</div>
+                <div className='mid-div-subchild' >Contact</div>
             </div>
             <div className='nav-right-div'>
                 <div>Login</div>
