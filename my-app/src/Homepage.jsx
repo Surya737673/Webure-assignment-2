@@ -10,14 +10,30 @@ import locationicon from "../src/utils/locationicon.png";
 import call from "../src/utils/call.png";
 import girl from "../src/utils/girlimg.svg";
 
+import oval from "../src/utils/Oval.png"
+import oval2 from "../src/utils/oval2.png"
+import star from "../src/utils/star.png";
+import chaand from "../src/utils/chaand.png"
+import dot from "../src/utils/dot.png"
+import silver from "../src/utils/silver.png"
+import silverdot from "../src/utils/silverdot.png"
+import glass from "../src/utils/glassicon.png";
+import diamond from "../src/utils/diamondicon.png";
+import likeicon from "../src/utils/likeicon.png";
+import hearticon from "../src/utils/hearticon.png";
+import hollowheart from "../src/utils/hollowheart.png";
+
 export const Homepage = () => {
   return (
+    <>
     <div id='container'>
+      
         <div id="navbar">
             <div className="nav-left-div">
                <img src={rabbit} alt="" />
                 Datify
             </div>
+
             <div className='nav-middle-div'>
                 <div>Home</div>
                 <div className='mid-div-subchild'>Members</div>
@@ -59,6 +75,11 @@ export const Homepage = () => {
 
             </div>
             <div id='second-container-right'>
+                <img style={{width:"30px",height:"30px",marginTop:"250px"}} src={glass} alt="" />
+                <img style={{width:"60px",height:"60px",marginTop:"50px",marginLeft:"110px"}} src={diamond} alt="" />
+                <img style={{width:"30px",height:"30px",marginTop:"50px",marginLeft:"390px"}} src={likeicon} alt="" />
+                <img style={{width:"60px",height:"60px",marginTop:"220px",marginLeft:"530px"}} src={hearticon} alt="" />
+                <img style={{width:"60px",height:"60px",marginTop:"480px",marginLeft:"556px"}} src={hollowheart} alt="" />
                 <img src={man} alt="" />
                 <div id='sub-container'>
                     <div id='sub-container-left'>
@@ -104,9 +125,16 @@ export const Homepage = () => {
                     <div id='sub-container-right'>
                         <div id='incard'>
                         <div className='cardnumber'>
+                            <div id='ovaldiv'>
+                                <img  id="oval" src={oval} alt="" />
+                                <img  id="oval2" src={oval2} alt="" />
+                                <img  id="silver" src={silver} alt="" />
+                            </div>
+                        <img  id="star" src={star} alt="" />
                             <p>CARD NUMBER</p>
                             <h2>3829 &nbsp;4820&nbsp;4629&nbsp; 5025</h2>
                         </div>
+                        <img  id="chaand" src={chaand} alt="" />
                          <div className='card'>
                             <div>
                                 <p>CARD HOLDER NAME</p>
@@ -116,12 +144,16 @@ export const Homepage = () => {
                                 <p>VAID THRU</p>
                                 <h2>09/17</h2>
                             </div>
+
                          </div>
                          </div>
+                        
+                     
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </>
   )
 }
